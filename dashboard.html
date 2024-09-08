@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple HTML View</title>
+        <link rel="stylesheet" href="stylesheet/main.css">
+        <link rel="stylesheet" href="stylesheet/dashboard.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <section class="mainview">
+            <section class="left">
+                <div id="sidebar" class = "sidebar"></div>
+            </section>
+            <section class ="dashboard">
+                <section class = "navbar", id="navbar">
+                </section>
+                <section class="content">
+                    <section class = "main-content">
+                        <div class = "title"> Dashboard </div>
+                        <div class = "details">
+                            <div class = "box"></div>
+                            <div class = "box"></div>
+                            <div class = "box"></div>
+                        </div>
+                    </section>
+                    <section class = "secondary-content">
+                        <section class="table-relate">
+                            <section class="page-title">
+                                <h1>Recent Activity</h1>
+                            </section>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Joined</th>
+                                    <th>Type</th>
+                                    <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td>John Doe</td>
+                                    <td>john.doe@example.com</td>
+                                    <td>2023-05-12</td>
+                                    <td>Admin</td>
+                                    <td>Active</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Jane Smith</td>
+                                    <td>jane.smith@example.com</td>
+                                    <td>2022-08-19</td>
+                                    <td>User</td>
+                                    <td>Inactive</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Michael Brown</td>
+                                    <td>michael.brown@example.com</td>
+                                    <td>2021-11-03</td>
+                                    <td>Moderator</td>
+                                    <td>Active</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Lisa Johnson</td>
+                                    <td>lisa.johnson@example.com</td>
+                                    <td>2023-02-25</td>
+                                    <td>User</td>
+                                    <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                    <td>David Wilson</td>
+                                    <td>david.wilson@example.com</td>
+                                    <td>2020-07-14</td>
+                                    <td>Admin</td>
+                                    <td>Active</td>
+                                    </tr>
+                                </tbody>
+                                
+                            </table>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>  
+        <script>
+            // Load the sidebar content
+            $('#sidebar').load('sidebar.html');
+            $('#navbar').load('navbar.html')
+        </script>
+    </body>
+</html>
